@@ -45,6 +45,6 @@ public class MemberController {
     public String list(Model model) {
         List<Member> members = memberService.findMembers();
         model.addAttribute("members", members);
-        return "members/3";
+        return "members/memberList";
     }
 }
